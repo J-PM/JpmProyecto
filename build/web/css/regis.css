@@ -1,0 +1,83 @@
+html{
+    font-size: 2px;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #9AD1ED;
+    
+}
+.container{
+    max-width: 450px;
+    height: auto;
+    background-color: #EFEFEF;
+    margin: 5% auto;
+    padding-bottom: 1rem;
+}
+
+.form_top{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-top: solid .4rem #f39b53;
+    margin-bottom: 1rem;
+}
+
+.form_top h2{
+    font-weight: bold;
+    color: #000000;
+    font-size: 22px;
+}
+
+h2 span{
+    color: #ff3300;
+}
+
+.form_reg{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn_form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn_reset{
+    background-color: #EFEFEF;
+    padding: 5rem;
+    margin: 5rem 0;
+    border: none;
+    border-bottom: solid #C8C8C8 .5rem;
+    transition: all .5S;
+    
+    
+}
+
+.input:focus{
+    border-bottom: solid #f39b53 .5rem; 
+}
+
+.btn__submit, .btn_reset, .input {
+    width: 40%;
+    border-bottom: none;
+    background-color: #31B1E5;
+    color: white;
+    align-self: center;
+    
+}
+
+.btn_reset{
+    background-color: #EDA135;
+}
+
+.btn__submit:hover{
+    background-color: #4c9ed9;
+ }
+
+ .btn_reset:hover{
+     background-color: #fa9535;
+ }

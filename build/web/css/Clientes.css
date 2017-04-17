@@ -1,0 +1,152 @@
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 95%;
+    max-width: 500px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px ;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.datagrid table { 
+    border-collapse: collapse; 
+    text-align: left; width: 100%; 
+}
+.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif;
+           background: #fff;
+           overflow: hidden; 
+           border: 1px solid #006699;
+           -webkit-border-radius: 3px; 
+           -moz-border-radius: 3px; 
+           border-radius: 3px; 
+}
+.datagrid table td, .datagrid table th {
+    padding: 3px 10px;
+}
+.datagrid table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color:#006699; 
+    color:#FFFFFF;
+    font-size: 15px; 
+    font-weight: bold; 
+    border-left: 1px solid #0070A8; 
+} 
+.datagrid table thead th:first-child {
+    border: none;
+}
+.datagrid table tbody td
+{ color: #00557F; 
+  border-left: 1px solid #E1EEF4;
+  font-size: 12px;
+  font-weight: normal;
+}
+.datagrid table tbody .alt td {
+    background: #E1EEf4; 
+    color: #00557F;
+}
+.datagrid table tbody td:first-child {
+    border-left: none; 
+}.datagrid table tbody tr:last-child td {
+    border-bottom: none; 
+}
+.datagrid table tfoot td div { 
+    border-top: 1px solid #006699;
+    background: #E1EEf4;
+}
+.datagrid table tfoot td {
+    padding: 0;
+    font-size: 12px
+} 
+.datagrid table tfoot td div{
+    padding: 2px; 
+}
+.datagrid table tfoot td ul { 
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-align: right; 
+}
+.datagrid table tfoot  li { 
+    display: inline; 
+}
+.datagrid table tfoot li a {
+    text-decoration: none; 
+    display: inline-block;  
+    padding: 2px 8px;
+    margin: 1px;
+    color: #FFFFFF;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');                                                                                                                                                                                                        background-color:#006699;
+}
+.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;
+                                                                    border-color: #00557F;
+                                                                    color: #FFFFFF;
+                                                                    background: none; 
+                                                                    background-color:#006699;
+}
+div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
